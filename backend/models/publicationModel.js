@@ -2,7 +2,8 @@ import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
 const publicationSchema = new Schema({
-    user: { type: Schema.Types.ObjectId, ref: 'User' },
+    // user: { type: Schema.Types.ObjectId, ref: 'User' },
+    owner: { type: Schema.Types.ObjectId, ref: 'User' },
     title: { type: String, required: true },
     authors: { type: String, required: true },
     journal: { type: String, required: true },
@@ -10,7 +11,7 @@ const publicationSchema = new Schema({
     year: { type: Number, required: true }
   });
   
-  const Publication = mongoose.model('Publication', publicationSchema);
+export const Publication = mongoose.model('Publication', publicationSchema);
   
-  export default Publication;
+
   

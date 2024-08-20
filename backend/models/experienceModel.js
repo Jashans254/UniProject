@@ -9,7 +9,6 @@ const experienceSchema = new Schema({
     image: { type: String }
   });
   
-  const Experience = mongoose.model('Experience', experienceSchema);
+export const Experience = mongoose.model('Experience', experienceSchema);
   
-  export default Experience;
   

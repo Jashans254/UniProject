@@ -7,7 +7,5 @@ const skillSchema = new Schema({
     details: { type: String, required: true }
   });
   
-  const Skill = mongoose.model('Skill', skillSchema);
-  
-  export default Skill;
+export const Skill = mongoose.model('Skill', skillSchema);
   

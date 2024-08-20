@@ -8,7 +8,5 @@ const educationSchema = new Schema({
     year: { type: String, required: true },
   });
   
-  const Education = mongoose.model('Education', educationSchema);
-
-  export default Education;
+export const Education = mongoose.model('Education', educationSchema);
   
